@@ -38,6 +38,10 @@ def main():
         sys.exit(1)
     command = sys.argv[1:]
 
+    # check script is in current path
+    if not os.path.exists(command[0]):
+        command[0] = os.path.dirname(sys.executable) + "/" + command[0]
+
     reloader = Reloader(command)
     signal.signal(signal.SIGHUP, reloader)
     signal.signal(signal.SIGTERM, reloader.kill_process)

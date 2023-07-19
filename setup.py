@@ -6,7 +6,7 @@ def read(fname):
 
 setup(
     name = "pyreloader",
-    version = "0.1.3",
+    version = "0.1.4",
     author = "Chuan Miao",
     author_email = "chuan137@gmail.com",
     description = ("Reload a python program on kill signal."),
