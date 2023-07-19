@@ -8,6 +8,7 @@ pip install reloader
 
 Usage:
 
-reloader ./server.py
-kill -HUP <pid of parent process>
+Start program: `reloader ./server.py`
+
+Reload program: `kill -HUP <pid of parent process>`
 
