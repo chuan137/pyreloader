@@ -14,11 +14,12 @@ setup(
     keywords = "reload server",
     url = "https://github.com/chuan137/reloader",
     py_modules=['reloader'],
+    long_description_content_type="text/markdown",
     long_description=read('README.md'),
     classifiers=[
-        "Development Status :: 4 - Beta",
-        "Topic :: Utilities",
         "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python",
+        "Programming Language :: Python :: 3",
     ],
     install_requires=[],
     entry_points={'console_scripts': [
